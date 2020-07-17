@@ -1,30 +1,19 @@
 <!DOCTYPE html>
 
-<!-- Contact page for Personal Website
-	 Gonna Need PHP for this ?! -->
-
-
-<!-- TODO: 
-		   1. A Photo as a BackDrop. Could have a Footer if so preferred.
-		   2. Form containing messengers Contact Info. (Your Name (required)/Your Email (required)/Subject/Your Message)   
-			  And a "Send" button, forwarded to an email of my choosing. 
-		   3. Recipient must receive confirmation of the sent message. "Thank you for reaching out..."
--->
-
-
 <html>
 	<head>
-		<meta charset = "UTF-8">
+		<meta charset = "utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>Contact - Daniel Navarro</title>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
 		<link rel="stylesheet" href="../PersonalWebsite/main.css">
 		<link rel="icon"  href="../PersonalWebsite/img/Beach.jpg">
 	</head>
 
-
-	<body>
+	<body class="contact">
 		<nav>
 			<div class="logo">
 				<h4>Daniel Navarro</h4>
@@ -44,11 +33,34 @@
 			</div>
 		</nav>
 
-
 		<script src="main.js"></script>
 
-		<img src="../PersonalWebsite/img/Tracks.jpg">
-
-
+		<header id="contactMe">
+			<div class="contact-wrapper">
+				<form action="" class="form-area">
+					<div class="msg-area">
+						<label for="msg">Your Message</label>
+						<textarea id="msg"></textarea>
+					</div>
+	
+					<div class="details-area">
+						<label for="name">Your Name</label>
+						<input type="text" name="" id="name">
+	
+						<label for="email">Your Email</label>
+						<input type="email" name="" id="email">
+	
+						<label for="name">Subject</label>
+						<input type="text" name="" id="subject">
+	
+						<button type="submit">Send</button>
+					</div>
+				</form>
+			</div>	
+		</header>
+		
+		<footer id="main-footer" class="grid">
+			<p> &copy; COPYRIGHT 2020 | DANIEL NAVARRO | ALL RIGHTS RESERVED | </p>
+		</footer>
 	</body>	
 </html>

@@ -1,6 +1,3 @@
-/* Style Sheet for Home Page */
-
-
 *{
 	margin: 0px;
 	padding: 0px;
@@ -13,11 +10,6 @@
 	text-transform: uppercase;
 	letter-spacing:  5px;
 	font-size: 20px;
-	/* 
-	display: flex;
-	justify-content: space-around;
-	width: 30%;
-	*/
 	margin: 1.5rem; 
 }
 
@@ -25,7 +17,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* min-height: 10vh; */
+	min-height: 8vh; 
 	background-color: rgb(12, 12, 12);  
 	font-family: 'Poppins', sans-serif;
 }
@@ -52,6 +44,7 @@ nav {
 	color: #e29e62;
 }  
 
+
 .burger {
 	display: none;
 	cursor: pointer;
@@ -67,7 +60,7 @@ nav {
 
 
 /* Main Area */
-body {
+body.home {
 	margin:0;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 17px;
@@ -78,7 +71,7 @@ body {
 #showcase {
 	background-image: url('../PersonalWebsite/img/Beach.jpg');
 	background-size: cover;
-	height: 100vh;   /* View Port Height (vh) */
+	height: 100vh;   
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -86,7 +79,8 @@ body {
 
 #showcase h1 {
 	font-size: 50px;
-	font-family: 'Cormorant SC', serif;
+	font-family: 'Cormorant SC', serif;  
+	
 }
 
 #showcase h2 {
@@ -95,10 +89,167 @@ body {
 }
 
 
+/* Biography Area */
+body.bio {
+	margin: 0;
+	background-color: black;
+	color: blanchedalmond;
+}
+
+#portrait {
+	background-image: url('../PersonalWebsite/img/Portrait.jpg');
+	background-size: cover;
+	height: 100vh;
+}
+
+#guitar {
+	background-image: url('../PersonalWebsite/img/Hands.1.jpg');
+	background-size: cover;
+	height: 50vh;
+}
+
+#maestros {
+	background-image: url('../PersonalWebsite/img/Jefe.jpg');
+	background-size: cover;
+	height: 50vh;
+}
+
+
+#orquestra {
+	background-image: url('../PersonalWebsite/img/orquestra.png');
+	background-size: cover;
+	height: 50vh;
+}
+
+
+#student {
+	background-image: url('../PersonalWebsite/img/student.JPG');
+	background-size: cover;
+	height: 50vh;
+}
+
+.p {
+	color: blanchedalmond;
+}
+
+
+/* Video Page Area */ 
+body.video {
+	background-color:black;
+}
+
+.videoInsert {
+	margin-top: 5em;
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	padding: 2.4em;
+	padding-bottom: 100px;
+}
+
+.video p {
+	line-height: 1.5em;
+	color: papayawhip;
+	font-size: 17px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.video:not(p) {
+	line-height: 1.5em;
+	color: papayawhip;
+	font-size: 17px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Contact Area */
+#contactMe {
+	background-image: url('../PersonalWebsite/img/Tracks.jpg');
+	background-size: cover;
+	height: 100vh;
+}
+
+.contact-wrapper {
+	padding: 100px 0 0;
+	width: 610px;
+	margin: 5% auto;
+	margin-right: 2em;
+	margin-top: 0em;
+}
+
+.form-area {
+	display: flex;
+	background: rgb(0,0,0,0.8);
+	border-radius: 25px; 
+	padding: 2.0em; 
+}
+
+.msg-area {
+	display: flex;
+	flex-direction: column;
+	order: 2;
+}
+
+.msg-area > textarea {
+	flex: 1;
+	min-width: 18em;
+	background: transparent;
+	color: #fff;
+	padding: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+}
+
+.details-area {
+	flex: 1;
+	order: 1;
+	margin-right: 2em;
+}
+
+.details-area input {
+	width: 100%;
+	background: transparent;   
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+}
+
+.details-area input,
+.details-area button {
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+.details-area button {
+	background: #108ec9;
+	color: #fff;
+	border: 0;
+	padding: 10px 27px;
+	border-radius: 15px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2PX;
+}
+
+.details-area button:hover {
+	background: #03be03;
+}
+
+label {
+	color: #fff;
+	text-transform: capitalize;
+	line-height: 35px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 19px;
+}
+
+
 /* Footer */
-#main-footer {
+#main-footer p {
 	font-family: 'Times New Roman', Times, serif;
-	padding: 2em;
+	padding: 3em;
 	background: #000;
 	color: #fff;
 	text-align: center;
@@ -110,11 +261,19 @@ body {
 	.nav-links {
 		width: 60%;
 	}
+
+	.inner-container {
+		padding: 80px;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	body {
 		overflow-x: hidden;  /* Hide Scroll capability */
+	}
+
+	.logo {
+		font-size: 17px;
 	}
 
 	.nav-links {
@@ -145,15 +304,18 @@ body {
 		display: none;
 	}
 
-	.nav-links a:active {
-		color: #e29e62;
-	}   
+	.contact-wrapper {
+		padding: 100px 0 0;
+		width: 400px;
+		margin: 5% auto;
+		margin-right: 5em;
+		margin-top:1.7em;
+	}
 }
 
 .nav-active {
 	transform: translateX(0%);  /* shows nav when burger is clicked */
 }
-
 
 
 @keyframes navLinkFade {

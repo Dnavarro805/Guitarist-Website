@@ -44,7 +44,6 @@ nav {
 	color: #e29e62;
 }  
 
-
 .burger {
 	display: none;
 	cursor: pointer;
@@ -69,7 +68,7 @@ body.home {
 }
 
 #showcase {
-	background-image: url('../PersonalWebsite/img/Beach.jpg');
+	background-image: url('img/Beach.jpg');
 	background-size: cover;
 	height: 100vh;   
 	display: flex;
@@ -89,6 +88,7 @@ body.home {
 }
 
 
+
 /* Biography Area */
 body.bio {
 	margin: 0;
@@ -97,33 +97,33 @@ body.bio {
 }
 
 #portrait {
-	background-image: url('../PersonalWebsite/img/Portrait.jpg');
+	background-image: url('img/Portrait.jpg');
 	background-size: cover;
 	height: 100vh;
 }
 
 #guitar {
-	background-image: url('../PersonalWebsite/img/Hands.1.jpg');
+	background-image: url('img/Hands.1.jpg');
 	background-size: cover;
 	height: 50vh;
 }
 
 #maestros {
-	background-image: url('../PersonalWebsite/img/Jefe.jpg');
+	background-image: url('img/Jefe.jpg');
 	background-size: cover;
 	height: 50vh;
 }
 
 
 #orquestra {
-	background-image: url('../PersonalWebsite/img/orquestra.png');
+	background-image: url('img/orquestra.png');
 	background-size: cover;
 	height: 50vh;
 }
 
 
 #student {
-	background-image: url('../PersonalWebsite/img/student.JPG');
+	background-image: url('img/student.JPG');
 	background-size: cover;
 	height: 50vh;
 }
@@ -135,10 +135,10 @@ body.bio {
 
 /* Video Page Area */ 
 body.video {
-	background-color:black;
+	background-color:black; 
 }
 
-.videoInsert {
+.iframe-container {
 	margin-top: 5em;
 	max-width: 100%;
 	max-height: 100%;
@@ -147,14 +147,8 @@ body.video {
 	padding-bottom: 100px;
 }
 
-.video p {
-	line-height: 1.5em;
-	color: papayawhip;
-	font-size: 17px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
-.video:not(p) {
+.iframe-container p {
 	line-height: 1.5em;
 	color: papayawhip;
 	font-size: 17px;
@@ -163,8 +157,8 @@ body.video {
 
 
 /* Contact Area */
-#contactMe {
-	background-image: url('../PersonalWebsite/img/Tracks.jpg');
+#contactImg {
+	background-image: url('img/Tracks.jpg');
 	background-size: cover;
 	height: 100vh;
 }
@@ -177,7 +171,7 @@ body.video {
 	margin-top: 0em;
 }
 
-.form-area {
+.contact-form {
 	display: flex;
 	background: rgb(0,0,0,0.8);
 	border-radius: 25px; 
@@ -188,10 +182,11 @@ body.video {
 	display: flex;
 	flex-direction: column;
 	order: 2;
+	padding-bottom: 1.5em;
 }
 
 .msg-area > textarea {
-	flex: 1;
+	flex:1;
 	min-width: 18em;
 	background: transparent;
 	color: #fff;
@@ -203,7 +198,7 @@ body.video {
 .details-area {
 	flex: 1;
 	order: 1;
-	margin-right: 2em;
+	margin-right: 1em;
 }
 
 .details-area input {
@@ -305,11 +300,7 @@ label {
 	}
 
 	.contact-wrapper {
-		padding: 100px 0 0;
-		width: 400px;
-		margin: 5% auto;
-		margin-right: 5em;
-		margin-top:1.7em;
+		grid-template-columns: 1fr;
 	}
 }
 

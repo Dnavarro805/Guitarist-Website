@@ -1,11 +1,16 @@
 /* 
-Color Palette: 
-        White: #fafafa 
-       yellow: #e0bb20
+Color Palette (Stick to 3 for Consistency): 
+        White: #fafafa      // For All Text
+       yellow: #e0bb20  ~ Too Bright?
           Red: #841818
-        black: #000000
+		black: #000000    // For All Backgrounds
+		
+Other Yellows:
+			#E7D3B1  ~ Too Light
+			#e29e62
+			#926239  ~ Darker...
+			#CFB486   // Light & For Accented Text
  */
-
 
 *{
 	margin: 0px;
@@ -14,7 +19,7 @@ Color Palette:
 }
 
 .coming-soon {
-    height: 25rem;
+    height: 35rem;
     padding: 15rem;
     background-color: #000000;
     text-align: center;
@@ -24,11 +29,15 @@ Color Palette:
 
 /* Navigation Section */ 
 .logo {
-	color: rgb(266, 266, 266);
+	color: #fafafa;
 	text-transform: uppercase;
 	letter-spacing:  5px;
 	font-size: 20px;
 	margin: 1.5rem; 
+}
+
+.logo .logo-deco {
+	color: #CFB486;
 }
 
 nav {
@@ -36,7 +45,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	min-height: 8vh; 
-	background-color: rgb(12, 12, 12);  
+	background-color: rgb(12, 12, 12);  /* Wanted to create a accent in the background */
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -51,7 +60,7 @@ nav {
 }
 
 .nav-links a {
-	color: rgb(266, 266, 266);
+	color: #fafafa;
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
@@ -59,8 +68,12 @@ nav {
 }
 
 .nav-links a:hover {
-	color: #e29e62;
+	color: #CFB486;
 }  
+
+.nav-links .current {
+	color:#CFB486; 
+}
 
 .burger {
 	display: none;
@@ -70,7 +83,7 @@ nav {
 .burger div {
 	width: 25px;
 	height: 3px;
-	background-color: rgb(226, 226, 226);
+	background-color: #fafafa;
 	margin: 5px;
 	transition: all 0.3s ease;
 }
@@ -81,7 +94,7 @@ body.home {
 	margin:0;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 17px;
-	color: #926239;
+	color: #926239; 
 	line-height: 1.3;
 }
 
@@ -124,7 +137,7 @@ body.video {
 	padding-bottom: 100px;
 	display: flex;
 	flex-wrap: column;
-	justify-content: center;
+	justify-content: center;	
 }
 
 .iframe-container p {
@@ -225,7 +238,8 @@ label {
     background-color: #000000;
 	color: #fafafa;
     text-align: center;
-    font-size: small;
+	font-size: small;
+	letter-spacing: 1px;
 }
 
 
@@ -279,6 +293,22 @@ label {
 
 	.contact-wrapper {
 		grid-template-columns: 1fr;
+	}
+
+	.coming-soon {
+		height: 35rem;
+		padding: 55% 0;
+		display: flex;
+		flex-wrap: column;
+		justify-content: center;
+		text-transform: uppercase;
+		font-size: xx-large;
+	}
+	
+	/* Footer Section */
+	#main-footer p {
+		letter-spacing: 0px;
+		font-size: x-small;
 	}
 }
 

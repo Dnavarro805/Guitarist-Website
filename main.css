@@ -10,6 +10,16 @@ mark {
 	font-size: 18px;
 }
 
+/* Coming Soon */
+.coming-soon {
+    height: 35rem;
+    padding: 15rem;
+    background-color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+	font-size: xx-large;
+}
+
 /* Navigation Section */ 
 .logo {
 	color: #fafafa;
@@ -28,7 +38,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	min-height: 8vh; 
-	background-color: rgb(12, 12, 12);  
+	background-color: #000000;  
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -258,7 +268,7 @@ label {
 	}
 
 	.nav-links {
-		position: absolute;
+		position: fixed;
 		right: 0px;
 		height: 100vh;
 		top: 0vh;
@@ -285,10 +295,46 @@ label {
 		display: none;
 	}
 
+	/* Coming Soon */
+	.coming-soon {
+		height: 35rem;
+		padding: 55% 0;
+		display: flex;
+		flex-wrap: column;
+		justify-content: center;
+		text-transform: uppercase;
+		font-size: xx-large;
+	}
+
 	/* Contact Section */
 	.contact-wrapper {
-		grid-template-columns: 1fr;
 		width: 100%;
+	}
+
+	.msg-area {
+		width: 240px;
+	}
+
+	.msg-area > textarea {
+		min-width: 15rem;
+		font-size: 12px;
+	}
+
+	label {
+		font-size: 16px;
+	}
+
+	.details-area {
+		padding: 0 0.5em 0 0;
+	}
+
+	.details-area input {
+		max-width: 110%;
+		font-size: 11px;
+	}
+
+	.details-area button {
+		font-size: 11.5px;
 	}
 
 	/* Media Section */

@@ -73,6 +73,7 @@ nav {
 
 /* Home Section */
 body.home {
+	background-color: #000000;
 	margin:0;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 17px;
@@ -105,6 +106,7 @@ body.home {
 /* Biography Section */
 body.bio {
 	font-family: Century Gothic;
+	background-color: #000000;
 }
 
 .about-img {
@@ -150,6 +152,10 @@ body.video {
 }
 
 /* Contact Section */
+body.contact {
+	background-color: #000000;
+}
+
 #contactImg {
 	background-image: url('img/Tracks.jpg');
 	background-size: cover;
@@ -297,7 +303,7 @@ label {
 	/* Bio Section */
 	.bio-container {
 		width: 100%;
-		padding: 23px;
+		padding: 5px;
 	}
 
 	/* Media Section */

@@ -2,7 +2,7 @@
 Point of reference for potential clients and referrals. 
 
 ## How to use the Guitarist-Website
-Accessed online, it allows users to navigate to desired information.\
+Accessed online, it allows users to navigate to the desired information.\
 To access business website click on the following URL:\
 https://navarroguitarra.com
 

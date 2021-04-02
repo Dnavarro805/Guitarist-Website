@@ -1,0 +1,23 @@
+{
+  "name": "guitarist-website",
+  "version": "1.0.0",
+  "description": "My business website.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dnavarro805/Guitarist-Website.git"
+  },
+  "author": "Daniel Navarro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dnavarro805/Guitarist-Website/issues"
+  },
+  "homepage": "https://github.com/Dnavarro805/Guitarist-Website#readme",
+  "dependencies": {
+    "airtable": "^0.10.1",
+    "dotenv": "^8.2.0"
+  }
+}

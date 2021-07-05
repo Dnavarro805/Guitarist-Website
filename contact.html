@@ -5,6 +5,7 @@
 		<!-- Meta Tags -->
 		<meta charset = "utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 		<!-- Page Title -->
 		<title>Contact - Daniel Navarro</title>
@@ -14,16 +15,16 @@
 		<link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
 
 		<!-- Style Sheets -->
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="css/main.css">
 
 		<!-- Favicon -->
-		<link rel="icon" href="img/Beach.jpg">
+		<link rel="icon" href="images/Beach.jpg">
 	</head>
 
 	<body class="contact">
 		<nav>
 			<div class="logo">
-				<h4> <span class="logo-deco">Daniel</span> Navarro</h4>
+				<h4> <span class="logo-deco">Daniel</span>Navarro</h4>
 			</div>
 
 			<ul class="nav-links">
@@ -42,6 +43,7 @@
 
 		<header id="contactImg">
 			<div class="contact-wrapper">
+				
 				<form class="form" id="contact-form">
 					
 					<div class="msg-area">
@@ -52,23 +54,31 @@
 					<div class="details-area">
 						<label for="name">Your Name</label>
 						<input type="text" name="name" id="name">
+
+						<label for="phone">Your Phone</label>
+						<input type="tel" name="phone" id="phone">
 	
 						<label for="email">Your Email</label>
 						<input type="email" name="email" id="email">
 	
-						<label for="phone">Your Phone</label>
-						<input type="text" name="phone" id="phone">
-	
-						<button type="submit">Send</button>
+						<button type="submit" id="button">Send</button>
 					</div>
 				</form>
 			</div>	
 		</header>
 		
 		<footer id="main-footer" class="grid">
-			<p> &copy; COPYRIGHT 2021 | DANIEL NAVARRO | ALL RIGHTS RESERVED | </p>
+			<p> 
+				Copyright &copy; 
+				<script>document.write(new Date().getFullYear())</script> | DANIEL NAVARRO | All Rights Reserved
+			</p> 
 		</footer>
 
-		<script src="index.js"></script>
+		<script src="./js/navSlide.js"></script>
+		<script src="./js/airtable.js"></script>
+		<script type="module">
+			import { airtable } from "./js/contact.js";
+  			document.querySelector("#button").addEventListener("click", airtable);
+		</script>
 	</body>	
 </html>

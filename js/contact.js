@@ -13,15 +13,16 @@ export function airtable() {
 
         const [message, name, phone, email] = Array(...myForm.elements).map(element => element.value);
 
-        base('Contacts').create([ 
-        {
-            "fields": {
-                "Phone #": phone,
-                "Name": name,
-                "Email Address": email,
-                "Interactions": message
+        base('Contacts').create([
+            {
+                "fields": {
+                    "Phone #": phone,
+                    "Name": name,
+                    "Email Address": email,
+                    "Interactions": message
+                }
             }
-        }])
+        ])
         alert("Success: Form Sent!");
     });
 }
